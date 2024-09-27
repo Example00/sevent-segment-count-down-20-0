@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -148.62,
+      "left": 72.28,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg2",
+      "top": -148.62,
+      "left": 120.28,
+      "attrs": { "common": "cathode" }
+    }
+  ],
+  "connections": [
+    [ "sevseg2:F", "uno:A0", "white", [ "v-27.96", "h201.6", "v403.2", "h-124.8" ] ],
+    [ "sevseg2:B", "uno:10", "orange", [ "v-18.36", "h48", "v144", "h-57.6" ] ],
+    [ "sevseg2:A", "uno:9", "cyan", [ "v-8.76", "h76.8", "v115.2", "h-67.2" ] ],
+    [ "sevseg1:G", "uno:8", "purple", [ "v-47.16", "h182.4", "v182.4", "h-86.4" ] ],
+    [ "sevseg1:F", "uno:7", "green", [ "v-66.36", "h220.8", "v182.4", "h-115.2" ] ],
+    [ "sevseg1:A", "uno:2", "yellow", [ "v-104.76", "h278.4", "v230.4", "h-144" ] ],
+    [ "sevseg1:B", "uno:3", "red", [ "v-85.56", "h230.4", "v182.4", "h9.6" ] ],
+    [ "sevseg2:G", "uno:A1", "violet", [ "v-8.76", "h-268.8", "v393.6", "h364.8" ] ],
+    [ "sevseg1:E", "uno:6", "blue", [ "v48", "h124.8", "v-19.2" ] ],
+    [ "sevseg1:D", "uno:5", "violet", [ "v19.2", "h134.4" ] ],
+    [ "sevseg1:C", "uno:4", "yellow", [ "v9.6", "h115.2" ] ],
+    [ "sevseg2:E", "uno:13", "red", [ "v0" ] ],
+    [ "sevseg2:D", "uno:12", "cyan", [ "v0" ] ],
+    [ "sevseg2:C", "uno:11", "gray", [ "v28.8", "h-9.6" ] ],
+    [ "sevseg1:COM.1", "uno:GND.1", "black", [ "h0", "v67.2", "h19.2" ] ],
+    [ "sevseg2:COM.1", "uno:GND.1", "black", [ "h0", "v38.4", "h-38.4" ] ]
+  ],
+  "dependencies": {}
+}
